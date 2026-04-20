@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello, CPSU!</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom,grey);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .image-row {
+      display: flex;
+      gap: 10px;
+    }
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  <p>Ronamie Alegria BSIT-2A</p>
+
+  This is me:
+  <div class="image-row">
+    <img src="/Images /Amie.jpeg" alt="Amie" width="120">
+    <img src="/Activity /Product.jpg" alt="Activity" width="120">
+     <img src="/Lay out 2/t-shirt.jpg" alt="Activity" width="120">
+  </div>
+
+  <iframe width="350" height="300"
+    src="https://youtu.be/noLBXppBRA0?si=0itClo15pksh3Je"
+    title="platform tutorial"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <h3>This is my favorite movie:</h3>
+  <p>
+    SAMPLE PROJECTS:<br>
+    <a href=" " target="_blank">
+      1. CANVA PORTFOLIO
+    </a><br>
+    <a href=" " target="_blank">
+      2. PROBLEM AND SOLUTION
+    </a><br>
+    <a href="https://www.figma.com/proto/iG6oqZoPdLfowlPm3n6jqP/Untitled?node-id=7-136&p=f&t=GURskTzNmW6arDzm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+      3. PORTFOLIO USING FIGMA
+    </a>
+  </p>
+  <div>
+    <textarea id="userMessage" rows="4" cols="50" placeholder="Enter your message here"></textarea><br>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var message = document.getElementById("userMessage").value;
+      alert("Message sent: " + message)
+      document.getElementById("userMessage").value = "";
+    }
+  </script>
+</body>
+</html>
